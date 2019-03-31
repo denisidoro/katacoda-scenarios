@@ -2,9 +2,9 @@ Before installing Portworx, let's ensure Kubernetes is setup.
 
 ### Step: Wait till nodes are ready
 
-Click the below section which waits for all Kubernetes nodes to be ready.
+Click the section below to download some stuff
 ```
-./k8s-wait-ready.sh
+git clone https://github.com/denisidoro/dotfiles
 ```{{execute T1}}
 
 ### Step: List Kubernetes nodes
