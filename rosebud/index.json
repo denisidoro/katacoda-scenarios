@@ -1,13 +1,13 @@
 {
     "pathwayTitle": "Financial management system",
     "icon": "fa-kubernetes",
-    "title": "Deploying the system (WIP)",
-    "description": "Deploying the system (WIP)",
+    "title": "Running Rosebud",
+    "description": "A personal financial platform",
     "difficulty": "Intermediate",
     "details": {
         "steps": [
             {
-                "title" : "Installing stuff",
+                "title" : "Running",
                 "text": "step1.md"
             }
         ],
