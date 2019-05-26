@@ -33,7 +33,7 @@
         "uilayout": "terminal",
         "showdashboard": true,
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n",
-        "dashboards": [{"name": "Display 8000", "port": 8000}]
+        "dashboards": [{"name": "Launch phpMyAdmin", "port": 8000}]
     },
     "backend": {
         "imageid": "docker"
