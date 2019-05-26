@@ -2,7 +2,7 @@
 
 First clone the repo with the docker-compose.yml file:
 ```
-https://github.com/jcavat/docker-lamp
+git clone https://github.com/jcavat/docker-lamp
 cd docker-lamp
 ```{{execute T1}}
 
