@@ -1,0 +1,41 @@
+{
+    "pathwayTitle": "Dotfiles",
+    "icon": "fa-docker",
+    "title": "Setting up dotfiles",
+    "description": "Learn how to setup denisidoro/dotfiles",
+    "difficulty": "beginner",
+    "details": {
+        "steps": [
+            {
+                "title" : "Running",
+                "text": "step1.md"
+            },
+            {
+                "title" : "Viewing",
+                "text": "step2.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "courseData": "background.sh",
+            "code": "foreground.sh",
+            "credits": "https://github.com/denisidoro"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+
+        "assets": {
+            "client": [ {"file": "*", "target": "/root", "chmod": "+x" } ]
+        }
+    },
+    "environment": {
+        "uilayout": "terminal",
+        "showdashboard": true,
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n",
+        "dashboards": [{"name": "Launch phpMyAdmin", "port": 8000}]
+    },
+    "backend": {
+        "imageid": "docker"
+    }
+}
