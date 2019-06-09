@@ -2,7 +2,7 @@
 
 First clone the repo with the docker-compose.yml file:
 ```
-git clone https://github.com/denisidoro/dotfiles .dotfiles
+git clone https://github.com/denisidoro/dotfiles $HOME/.dotfiles
 $HOME/.dotfiles/scripts/environment/install
 ```{{execute T1}}
 
