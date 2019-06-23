@@ -6,6 +6,7 @@ Let's clone them first.
 
 Click below to execute the command:
 ```
-git clone https://github.com/denisidoro/dotfiles $HOME/.dotfiles
+repo="https://github.com/denisidoro/dotfiles"
+git clone $repo $HOME/.dotfiles
 ```{{execute T1}}
 
