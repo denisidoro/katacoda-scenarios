@@ -1,8 +1,8 @@
 ### Initial setup
 
-We need to install fzf first for the commands to work:
+We need to install jq and fzf first for the commands to work:
 ```
-yes | $HOME/.dotfiles/bin/dot pkg add fzf
+yes | $HOME/.dotfiles/bin/dot pkg add jq fzf
 ```{{execute T1}}
 
 Now, let's make sure the command is available:
