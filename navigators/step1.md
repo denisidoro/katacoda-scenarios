@@ -13,5 +13,5 @@ git clone $repo $HOME/.dotfiles
 To be double sure, let's checkout to a commit we know that is compatible with this demo:
 ```
 cd $HOME/.dotfiles
-git checkout 7c8b9b8
+git checkout 11ab9b6
 ```{{execute T1}}
