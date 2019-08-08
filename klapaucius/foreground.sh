@@ -11,6 +11,8 @@ sudo() {
    
 export -f sudo
 
+apt update
+
 git clone https://github.com/denisidoro/dotfiles "$DOTFILES"
 dot pkg add lein
 
