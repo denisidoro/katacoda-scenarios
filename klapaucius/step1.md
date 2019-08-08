@@ -4,9 +4,12 @@ Let's start it first
 
 TODO
 ```
-./clone
+export DOTFILES="${HOME}/.dotfiles"
+export DOT_DOCOPTS=go
+export PATH="${DOTFILES}/bin:${PATH}"
+~/scripts/clone
 ```{{execute T1}}
 
 ```
-./prepare
+~/scripts/prepare
 ```{{execute T1}}
