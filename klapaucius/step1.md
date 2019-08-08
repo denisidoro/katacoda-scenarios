@@ -4,5 +4,9 @@ Let's start it first
 
 TODO
 ```
+./clone
+```{{execute T1}}
+
+```
 ./prepare
 ```{{execute T1}}
