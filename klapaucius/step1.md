@@ -4,5 +4,5 @@ Let's start it first
 
 TODO
 ```
-lein repl
+./prepare
 ```{{execute T1}}

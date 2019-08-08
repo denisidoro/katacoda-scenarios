@@ -20,11 +20,11 @@
         "finish": {
             "text": "finish.md"
         },
-
         "assets": {
             "client": [ 
-                {"file": "token_private.txt", "target": "/root/.credentials/token_private.txt" },
-                {"file": "token_public.txt", "target": "/root/.credentials/token_public.txt" } 
+                {"file": "token_private.txt", "target": "/root" },
+                {"file": "token_public.txt", "target": "/root" }, 
+                {"file": "prepare", "target": "/root", "chmod": "+x" } 
             ]
         }
     },
