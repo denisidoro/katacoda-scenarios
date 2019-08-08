@@ -4,7 +4,7 @@ Let's start it first
 
 TODO
 ```
-~/scripts/setup_dotfiles
+~/scripts/dotfiles
 ```{{execute T1}}
 
 ```
