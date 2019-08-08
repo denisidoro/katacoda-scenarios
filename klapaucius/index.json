@@ -22,9 +22,8 @@
         },
         "assets": {
             "client": [ 
-                {"file": "token_private.txt", "target": "~/" },
-                {"file": "token_public.txt", "target": "~/" }, 
-                {"file": "prepare", "target": "~/", "chmod": "+x" } 
+                {"file": "token_private.txt", "target": "~/.secrets/" },
+                {"file": "token_public.txt", "target": "~/.secrets/" }
             ]
         }
     },
