@@ -5,7 +5,6 @@ Let's start it first
 TODO
 ```
 ~/scripts/setup_dotfiles
-~/scripts/clone
 ```{{execute T1}}
 
 ```
