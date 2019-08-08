@@ -1,11 +1,18 @@
 export DOTFILES="${HOME}/.dotfiles"
 export DOT_DOCOPTS=go
-export PATH="${DOTFILES}/bin/dot:${PATH}"
+
+dot() {
+  "${DOTFILES}/bin/dot" "$@"
+}
+
+sudo() { 
+  "${DOTFILES}/bin/\$" "$@"; 
+}
+   
+export -f sudo
 
 git clone https://github.com/denisidoro/dotfiles "$DOTFILES"
-"${DOTFILES}/bin/dot" pkg add lein
-
-exec $SHELL
+dot pkg add lein
 
 echo "Please insert the password:"
 read pass
@@ -21,3 +28,5 @@ cat ~/.secrets/token_public.txt \
   > ~/.ssh/id_rsa.pub
 
 git clone git@github.com:denisidoro/klapaucius.git
+
+exec $SHELL
