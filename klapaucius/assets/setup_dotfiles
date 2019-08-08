@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+export DOTFILES="${HOME}/.dotfiles"
+   
+git clone https://github.com/denisidoro/dotfiles "$DOTFILES"
+"${DOTFILES}/bin/dot" self install
