@@ -3,8 +3,8 @@
 Start relevant processes:
 ```
 /assets/scripts/creds \
-  && $(/assets/scripts/dotfiles) \
-  && sudo bash -c '/assets/scripts/clone && /assets/scripts/prepare'
+  && $(/assets/scripts/dotfiles && exit) \
+  && bash -c '/assets/scripts/clone && /assets/scripts/prepare'
 ```{{execute T1}}
 
 Open grafana API:
