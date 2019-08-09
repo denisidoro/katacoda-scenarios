@@ -12,5 +12,6 @@ TODO
 ```{{execute T1}}
 
 ```
+sudo service docker restart
 /assets/scripts/prepare
 ```{{execute T1}}
