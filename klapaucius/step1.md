@@ -2,11 +2,11 @@
 
 Start relevant processes:
 ```
-/assets/scripts/creds
-/assets/scripts/dotfiles
-exec $SHELL
-/assets/scripts/clone
-/assets/scripts/prepare
+/assets/scripts/creds \
+  && /assets/scripts/dotfiles \
+  && exec $SHELL \
+  && /assets/scripts/clone \
+  && /assets/scripts/prepare
 ```{{execute T1}}
 
 Open grafana API:
