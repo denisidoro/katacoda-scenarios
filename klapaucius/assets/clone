@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "Updating openssl..."
-yes | sudo apt install openssl > /dev/null
+yes | sudo apt install openssl || true
 
 echo "Please insert the password:"
 read -s pass

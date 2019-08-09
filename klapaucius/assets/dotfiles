@@ -10,7 +10,7 @@ install_dotfiles() {
 }
 
 echo "apt updating..."
-sudo apt update > /dev/null || true
+sudo apt update || true
 
 echo
 echo "Installing dotfiles..."
