@@ -10,10 +10,8 @@ install_dotfiles() {
 }
 
 echo "apt updating..."
-apt update > /dev/null
+apt update > /dev/null || true
 
 echo
 echo "Installing dotfiles..."
 install_dotfiles > /dev/null
-
-
