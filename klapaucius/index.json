@@ -27,7 +27,6 @@
                 {"file": "clone", "target": "/assets/scripts/", "chmod": "+x"},
                 {"file": "prepare", "target": "/assets/scripts/", "chmod": "+x"},
                 {"file": "dotfiles", "target": "/assets/scripts/", "chmod": "+x"},
-                {"file": "creds", "target": "/assets/scripts/", "chmod": "+x"},
                 {"file": "askssh", "target": "/assets/scripts/", "chmod": "+x"}
             ]
         }

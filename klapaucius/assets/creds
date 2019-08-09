@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-echo "Please insert the password:"
-read -s pass
-
-export PASSWORD="$pass"
-echo "$PASSWORD" > /assets/.secrets/pass
