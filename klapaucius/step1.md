@@ -5,8 +5,7 @@ Let's start it first
 TODO
 ```
 /assets/scripts/dotfiles
+exit
 /assets/scripts/clone
-```{{execute T1}}
-
 /assets/scripts/prepare
 ```{{execute T1}}
