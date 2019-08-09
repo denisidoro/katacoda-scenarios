@@ -7,6 +7,6 @@ cd openssl-1.1.0f
 make
 sudo make install
 
-openssl version -a
+sudo openssl version -a
 
 exec $SHELL

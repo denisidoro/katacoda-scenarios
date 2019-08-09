@@ -8,7 +8,7 @@ mkdir -p ~/.ssh
 
 cat /assets/.secrets/token_private.txt \
   | dot sec decrypt -p "$pass" \
-  > /assets/.ssh/id_rsa
+  > ~/.ssh/id_rsa
 
 cat /assets/.secrets/token_public.txt \
   | dot sec decrypt -p "$pass" \
