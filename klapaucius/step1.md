@@ -4,9 +4,7 @@ Start relevant processes:
 ```
 /assets/scripts/creds \
   && /assets/scripts/dotfiles \
-  && exec $SHELL \
-  && /assets/scripts/clone \
-  && /assets/scripts/prepare
+  && sudo bash -c '/assets/scripts/clone && /assets/scripts/prepare'
 ```{{execute T1}}
 
 Open grafana API:
