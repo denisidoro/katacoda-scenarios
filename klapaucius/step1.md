@@ -4,13 +4,13 @@ Let's start it first
 
 TODO
 ```
-~/scripts/dotfiles
+/assets/scripts/dotfiles
 ```{{execute T1}}
 
 ```
-~/scripts/clone
+/assets/scripts/clone
 ```{{execute T1}}
 
 ```
-~/scripts/prepare
+/assets/scripts/prepare
 ```{{execute T1}}

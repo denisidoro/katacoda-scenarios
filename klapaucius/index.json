@@ -22,11 +22,11 @@
         },
         "assets": {
             "host01": [ 
-                {"file": "token_private.txt", "target": "/files/.secrets/"},
-                {"file": "token_public.txt", "target": "/files/.secrets/"},
-                {"file": "clone", "target": "/files/scripts/", "chmod": "+x"},
-                {"file": "prepare", "target": "/files/scripts/", "chmod": "+x"},
-                {"file": "dotfiles", "target": "/files/scripts/", "chmod": "+x"}
+                {"file": "token_private.txt", "target": "/assets/.secrets/"},
+                {"file": "token_public.txt", "target": "/assets/.secrets/"},
+                {"file": "clone", "target": "/assets/scripts/", "chmod": "+x"},
+                {"file": "prepare", "target": "/assets/scripts/", "chmod": "+x"},
+                {"file": "dotfiles", "target": "/assets/scripts/", "chmod": "+x"}
             ]
         }
     },
