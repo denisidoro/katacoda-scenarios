@@ -5,13 +5,8 @@ Let's start it first
 TODO
 ```
 /assets/scripts/dotfiles
-```{{execute T1}}
-
-```
 /assets/scripts/clone
 ```{{execute T1}}
 
-```
-sudo service docker restart
 /assets/scripts/prepare
 ```{{execute T1}}

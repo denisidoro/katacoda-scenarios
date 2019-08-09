@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+sudo service docker restart
+rm -rf ~/.lein
 dot pkg add default-jdk lein lsof
 ~/klapaucius/scripts/start
