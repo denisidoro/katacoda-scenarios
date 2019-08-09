@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "Please insert the password:"
-read -s pass
-
-mkdir -p ~/.ssh
+mkdir -p ~/.ssh || true
 
 cat /assets/.secrets/token_private.txt \
   | dot sec decrypt -p "$pass" \
@@ -14,4 +11,8 @@ cat /assets/.secrets/token_public.txt \
   | dot sec decrypt -p "$pass" \
   > ~/.ssh/id_rsa.pub
 
-ssh-agent bash -c 'ssh-add ~/.ssh/id_rsa; git clone git@github.com:denisidoro/klapaucius.git'
+ssh-agent || true
+SSH_ASKPASS="/assets/scripts/askssh" DISPLAY=:0 ssh-add <<< "$$PASSWORD"
+git clone git@github.com:denisidoro/klapaucius.git
+
+export PASSWORD="redacted"

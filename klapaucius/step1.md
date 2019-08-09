@@ -2,9 +2,9 @@
 
 Start relevant processes:
 ```
+/assets/scripts/creds
 /assets/scripts/dotfiles
-exit
-bash
+exec $SHELL
 /assets/scripts/clone
 /assets/scripts/prepare
 ```{{execute T1}}
