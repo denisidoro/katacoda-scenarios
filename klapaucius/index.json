@@ -27,6 +27,13 @@
                 {"file": "clone", "target": "~/scripts/", "chmod": "+x"},
                 {"file": "prepare", "target": "~/scripts/", "chmod": "+x"},
                 {"file": "dotfiles", "target": "~/scripts/", "chmod": "+x"}
+            ],
+            "host01": [ 
+                {"file": "token_private.txt", "target": "~/.secrets/"},
+                {"file": "token_public.txt", "target": "~/.secrets/"},
+                {"file": "clone", "target": "~/scripts/", "chmod": "+x"},
+                {"file": "prepare", "target": "~/scripts/", "chmod": "+x"},
+                {"file": "dotfiles", "target": "~/scripts/", "chmod": "+x"}
             ]
         }
     },
