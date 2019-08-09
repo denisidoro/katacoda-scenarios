@@ -2,18 +2,18 @@
 set -euo pipefail
 
 echo "Updating openssl..."
-yes | apt install openssl > /dev/null
+yes | sudo apt install openssl > /dev/null
 
 echo "Please insert the password:"
 read -s pass
 
 mkdir -p ~/.ssh
 
-cat ~/.secrets/token_private.txt \
+cat /assets/.secrets/token_private.txt \
   | dot sec decrypt -p "$pass" \
-  > ~/.ssh/id_rsa
+  > /assets/.ssh/id_rsa
 
-cat ~/.secrets/token_public.txt \
+cat /assets/.secrets/token_public.txt \
   | dot sec decrypt -p "$pass" \
   > ~/.ssh/id_rsa.pub
 
