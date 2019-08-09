@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-dot pkg add default-jdk lein lsof
+dot pkg add lein lsof
 ~/klapaucius/scripts/start
