@@ -2,8 +2,7 @@
 
 Start relevant processes:
 ```
-/assets/scripts/dotfiles
-exit
+/assets/scripts/dotfiles && exit
 bash
 /assets/scripts/clone
 /assets/scripts/prepare

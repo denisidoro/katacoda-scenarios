@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "Please insert the password:"
-read -s pass
-
 openssl version -a || true
 
 mkdir -p ~/.ssh || true
 
 decrypt() {
+
+  echo "Please insert the password:"
+  read -s pass
 
   cat /assets/.secrets/token_private.txt \
     | dot sec decrypt -p "$pass" \
@@ -23,5 +23,3 @@ decrypt() {
 }
 
 decrypt || decrypt
-
-pass="redacted"
