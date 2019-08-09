@@ -4,6 +4,8 @@ set -euo pipefail
 echo "Please insert the password:"
 read -s pass
 
+openssl version -a || true
+
 mkdir -p ~/.ssh || true
 
 cat /assets/.secrets/token_private.txt \
@@ -14,7 +16,7 @@ cat /assets/.secrets/token_public.txt \
   | dot sec decrypt -p "$pass" \
   > ~/.ssh/id_rsa.pub
 
-ssh-agent || true
+eval `ssh-agent -s`
 SSH_ASKPASS="/assets/scripts/askssh" DISPLAY=:0 ssh-add <<< "$pass"
 git clone git@github.com:denisidoro/klapaucius.git
 
