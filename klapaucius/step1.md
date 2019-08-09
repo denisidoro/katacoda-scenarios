@@ -8,10 +8,6 @@ TODO
 ```{{execute T1}}
 
 ```
-/assets/scripts/openssl
-```{{execute T1}}
-
-```
 /assets/scripts/clone
 ```{{execute T1}}
 
