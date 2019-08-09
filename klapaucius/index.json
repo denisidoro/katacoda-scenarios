@@ -27,13 +27,6 @@
                 {"file": "clone", "target": "~/scripts/", "chmod": "+x"},
                 {"file": "prepare", "target": "~/scripts/", "chmod": "+x"},
                 {"file": "dotfiles", "target": "~/scripts/", "chmod": "+x"}
-            ],
-            "host01": [ 
-                {"file": "token_private.txt", "target": "~/.secrets/"},
-                {"file": "token_public.txt", "target": "~/.secrets/"},
-                {"file": "clone", "target": "~/scripts/", "chmod": "+x"},
-                {"file": "prepare", "target": "~/scripts/", "chmod": "+x"},
-                {"file": "dotfiles", "target": "~/scripts/", "chmod": "+x"}
             ]
         }
     },
@@ -42,6 +35,6 @@
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
-        "imageid": "kubernetes-cluster"
+        "imageid": "docker"
     }
 }
