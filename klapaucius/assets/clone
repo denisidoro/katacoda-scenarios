@@ -4,15 +4,15 @@ set -euo pipefail
 mkdir -p ~/.ssh || true
 
 cat /assets/.secrets/token_private.txt \
-  | dot sec decrypt -p "$pass" \
+  | dot sec decrypt -p "$PASSWORD" \
   > ~/.ssh/id_rsa
 
 cat /assets/.secrets/token_public.txt \
-  | dot sec decrypt -p "$pass" \
+  | dot sec decrypt -p "$PASSWORD" \
   > ~/.ssh/id_rsa.pub
 
 ssh-agent || true
-SSH_ASKPASS="/assets/scripts/askssh" DISPLAY=:0 ssh-add <<< "$$PASSWORD"
+SSH_ASKPASS="/assets/scripts/askssh" DISPLAY=:0 ssh-add <<< "$PASSWORD"
 git clone git@github.com:denisidoro/klapaucius.git
 
 export PASSWORD="redacted"

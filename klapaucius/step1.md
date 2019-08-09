@@ -3,7 +3,7 @@
 Start relevant processes:
 ```
 /assets/scripts/creds \
-  && /assets/scripts/dotfiles \
+  && $(/assets/scripts/dotfiles) \
   && sudo bash -c '/assets/scripts/clone && /assets/scripts/prepare'
 ```{{execute T1}}
 
