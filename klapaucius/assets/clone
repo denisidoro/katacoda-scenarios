@@ -18,7 +18,7 @@ decrypt() {
     | dot sec decrypt -p "$pass" \
     > ~/.ssh/id_rsa.pub
 
-  ssh-agent bash -c 'SSH_ASKPASS="/assets/scripts/askssh" DISPLAY=:0 ssh-add <<< "$pass" && git clone git@github.com:denisidoro/klapaucius.git'
+  ssh-agent bash -c "SSH_ASKPASS=/assets/scripts/askssh DISPLAY=:0 ssh-add <<< \"$pass\" && git clone git@github.com:denisidoro/klapaucius.git"
 
 }
 
