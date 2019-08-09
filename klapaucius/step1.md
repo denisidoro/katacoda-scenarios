@@ -6,6 +6,7 @@ TODO
 ```
 /assets/scripts/dotfiles
 exit
+bash
 /assets/scripts/clone
 /assets/scripts/prepare
 ```{{execute T1}}
