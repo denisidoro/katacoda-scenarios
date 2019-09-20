@@ -7,7 +7,7 @@ docker run -e HOMEBREW_NO_AUTO_UPDATE=1 -itlinuxbrew/alpine bash -c 'brew instal
 
 Finally, let's install navi:
 ```
-HOMEBREW_NO_AUTO_UPDATE=1 brew install denisidoro/tools/navi
+brew install denisidoro/tools/navi
 ```{{execute T1}}
 
 ### Running
