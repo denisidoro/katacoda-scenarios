@@ -7,8 +7,12 @@
     "details": {
         "steps": [
             {
-                "title" : "Installing and running",
+                "title" : "Setup",
                 "text": "step1.md"
+            },
+            {
+                "title" : "Shell widget",
+                "text": "step2.md"
             }
         ],
         "intro": {
