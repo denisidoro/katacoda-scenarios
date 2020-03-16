@@ -7,7 +7,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && yes | ~/.fzf/i
 
 Alternatively:
 ```
-docker run -e HOMEBREW_NO_AUTO_UPDATE=1 -e HOMEBREW_NO_INSTALL_CLEANUP=1 -it linuxbrew/alpine bash -c 'brew install denisidoro/tools/navi; bash
+docker run -e HOMEBREW_NO_AUTO_UPDATE=1 -e HOMEBREW_NO_INSTALL_CLEANUP=1 -it linuxbrew/alpine bash -c 'brew install denisidoro/tools/navi; bash'
 ```{{execute T1}}
 
 ### Running
