@@ -2,7 +2,7 @@
 
 Let's install the bash widget:
 ```
-source "$(navi widget bash)"
+source <(navi widget bash)
 ```{{execute T1}}
 
 ### Running
